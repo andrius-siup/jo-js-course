@@ -1,5 +1,9 @@
 let js = "amazing";
-if (js === "amazing") alert("JavaScript is FUN!");
+console.log(40 + 8 + 23 - 10);
 
-let total = 40 + 8 + 23 - 10;
-console.log(total);
+console.log("Andrius");
+
+let firstName = "Andrius";
+console.log(firstName);
+
+let PI = 3.1415;
