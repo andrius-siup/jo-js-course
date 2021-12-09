@@ -12,6 +12,7 @@ let PI = 3.1415;
 
 */
 
+/*
 // --------------  Data Types
 
 let javascriptIsFun = true;
@@ -35,3 +36,27 @@ console.log(year);
 console.log(typeof year);
 
 console.log(typeof null);
+
+*/
+
+/*
+// --------------  let, const and var
+// let - used let for mutate variable - can be change later in code
+let age = 30;
+age = 35;
+
+console.log(age);
+
+// const - cannot be change
+const birth = 1991;
+// shows error
+//birth = 1995;
+// used const for default but when you know that your variable need to change use let
+
+// never use var - it same as let bet for modern js not using anymore
+var job = "programmer";
+job = "coder";
+console.log(job);
+*/
+
+// --------------  Basic operators

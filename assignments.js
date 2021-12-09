@@ -10,10 +10,17 @@ console.log(population);
 
 whichAssignment = "Asseignment Two - Data Types";
 let isIsland = false;
-let language;
+const language = "Lithuanian";
 
 console.log(whichAssignment);
 console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+
+whichAssignment = "Asseignment Three - let, const and var";
+languageSecond = "Russian";
+
+console.log(whichAssignment);
+console.log(language);
+console.log(languageSecond);
