@@ -60,3 +60,34 @@ console.log(job);
 */
 
 // --------------  Basic operators
+const now = 2037;
+const ageAndrius = now - 1985;
+const ageSarah = now - 2018;
+console.log(ageAndrius, ageSarah);
+
+// 2**3 means 2 to the power of 3 = 2*2*2=8
+console.log(ageAndrius * 2, ageAndrius / 10, 2 ** 3);
+
+// concatenate
+const first = "Andrius";
+const last = "Siupaila";
+console.log(first + " " + last);
+
+// assignment operator
+let x = 10 + 5; // 15
+x += 10; // x + 10 = 25
+x *= 4; // x * 4 = 100
+x++; // x + 1 = 101
+x--;
+x--; // x - 1 = 99
+console.log(x);
+
+// Comparison operators > < >= <= == ===
+console.log(ageAndrius > ageSarah); // true
+console.log(ageSarah >= 18); // true
+
+const isFullAge = ageSarah >= 18;
+console.log("Sarah is adlut : " + isFullAge);
+
+// same code as above
+console.log(now - 1985 > now - 2018);
