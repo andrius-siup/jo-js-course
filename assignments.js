@@ -50,3 +50,46 @@ console.log(
 );
 
 console.log(description);
+
+// CHALLENGE PART-1
+console.log("CHALLENGE PART-1 - DATA -1");
+
+let weightMark = 78;
+let heightMark = 1.69;
+let weightJohn = 92;
+let heightJohn = 1.95;
+
+// BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+
+// Both formula is correct
+// bmiMark = weightMark / heightMark ** 2;
+bmiMark = weightMark / (heightMark * heightMark);
+
+bmiJohn = weightJohn / (heightJohn * heightJohn);
+
+let markHigherBMI = bmiMark > bmiJohn;
+
+console.log("Mark BMI - Data 1 " + ": " + bmiMark);
+console.log("John BMI - Data 1 " + ": " + bmiJohn);
+console.log("Mark has higher BMI ? " + markHigherBMI);
+
+console.log("CHALLENGE PART-1 - DATA - 2");
+
+let weightMarkD2 = 95;
+let heightMarkD2 = 1.88;
+let weightJohnD2 = 85;
+let heightJohnD2 = 1.75;
+
+// BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+
+// Both formula is correct
+// bmiMark = weightMark / heightMark ** 2;
+bmiMarkD2 = weightMarkD2 / (heightMarkD2 * heightMarkD2);
+
+bmiJohnD2 = weightJohnD2 / (heightJohnD2 * heightJohnD2);
+
+let markHigherBMId2 = bmiMarkD2 > bmiJohnD2;
+
+console.log("Mark BMI - Data 2 " + ": " + bmiMarkD2);
+console.log("John BMI - Data 2 " + ": " + bmiJohnD2);
+console.log("Mark has higher BMI ? " + markHigherBMId2);

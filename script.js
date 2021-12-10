@@ -59,6 +59,7 @@ job = "coder";
 console.log(job);
 */
 
+/*
 // --------------  Basic operators
 const now = 2037;
 const ageAndrius = now - 1985;
@@ -91,3 +92,24 @@ console.log("Sarah is adlut : " + isFullAge);
 
 // same code as above
 console.log(now - 1985 > now - 2018);
+*/
+
+// Operator Procedence
+// Table: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+const now = 2037;
+const ageAndrius = now - 1985;
+const ageSarah = now - 2018;
+
+console.log(now - 1985 > now - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10
+console.log(x, y);
+
+// need parentheses (...)
+// averageAge = ageAndrius + ageSarah / 2;
+averageAge = (ageAndrius + ageSarah) / 2;
+
+console.log(averageAge);
+console.log(ageAndrius.ageSarah);
