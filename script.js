@@ -94,6 +94,7 @@ console.log("Sarah is adlut : " + isFullAge);
 console.log(now - 1985 > now - 2018);
 */
 
+/*
 // Operator Procedence
 // Table: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
@@ -113,3 +114,30 @@ averageAge = (ageAndrius + ageSarah) / 2;
 
 console.log(averageAge);
 console.log(ageAndrius.ageSarah);
+*/
+
+// Strings and Template Literals
+const firstName = "Andrius";
+const job = "coder";
+const birthYear = 1985;
+const year = 2037;
+
+const andrius =
+  "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+
+// easiest way - with backticks
+const andriusNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+
+console.log(andrius);
+console.log(andriusNew);
+console.log(`Jus a regular string...`);
+
+// new line - \n
+console.log("String with \n\
+multiple \n\
+lines");
+
+// with backticks - simple way - creates automaticly new lines
+console.log(`String with
+multiple
+lines`);

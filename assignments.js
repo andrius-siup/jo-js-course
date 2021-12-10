@@ -51,6 +51,12 @@ console.log(
 
 console.log(description);
 
+whichAssignment = "Asseignment  - Strings and Template Literals";
+description = `Portugal is in Europe, and its 11 million people speak portuguese.`;
+
+console.log(description);
+
+/*
 // CHALLENGE PART-1
 console.log("CHALLENGE PART-1 - DATA -1");
 
@@ -93,3 +99,4 @@ let markHigherBMId2 = bmiMarkD2 > bmiJohnD2;
 console.log("Mark BMI - Data 2 " + ": " + bmiMarkD2);
 console.log("John BMI - Data 2 " + ": " + bmiJohnD2);
 console.log("Mark has higher BMI ? " + markHigherBMId2);
+*/
