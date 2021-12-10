@@ -1,3 +1,4 @@
+/*
 let whichAssignment = "Asseignment One - Variable and Strings";
 let country = "Lithuania";
 let continent = "Europe";
@@ -7,7 +8,9 @@ console.log(whichAssignment);
 console.log(country);
 console.log(continent);
 console.log(population);
+*/
 
+/*
 whichAssignment = "Asseignment Two - Data Types";
 let isIsland = false;
 const language = "Lithuanian";
@@ -17,7 +20,9 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+*/
 
+/*
 whichAssignment = "Asseignment Three - let, const and var";
 languageSecond = "Russian";
 
@@ -55,6 +60,7 @@ whichAssignment = "Asseignment  - Strings and Template Literals";
 description = `Portugal is in Europe, and its 11 million people speak portuguese.`;
 
 console.log(description);
+*/
 
 /**
   JavaScript Fundamentals – Part 1 
@@ -135,6 +141,7 @@ is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark
 BMI (28.3) is higher than John's (23.9)!"
  */
 
+/*
 console.log("CHALLENGE PART-1 - CHALLENGE - 2");
 
 let weightMark = 78;
@@ -164,3 +171,4 @@ if (bmiMark > bmiJohn) {
 }
 
 console.log(message);
+*/

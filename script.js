@@ -144,6 +144,7 @@ multiple
 lines`);
 */
 
+/*
 // if / else statements
 const age = 12;
 
@@ -163,3 +164,4 @@ if (birtYear <= 2000) {
 }
 
 console.log(century);
+*/
