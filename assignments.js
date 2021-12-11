@@ -122,6 +122,7 @@ situation
 //   "How many neighbour countries does your country have?"
 // );
 
+/*
 const numNeighbours = Number(
   prompt("How many neighbour countries does your country have?")
 );
@@ -146,6 +147,8 @@ if (numNeighbours === 1) {
 // } else {
 //   console.log("No borders");
 // }
+
+*/
 
 /**
   JavaScript Fundamentals – Part 1 

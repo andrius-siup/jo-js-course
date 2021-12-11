@@ -259,3 +259,31 @@ if (favourite !== 23) {
   console.log("Amazing! The number is 23!");
 }
 */
+
+// Logical Operators
+const hasDriversLicence = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicence && hasGoodVision);
+console.log(hasDriversLicence || hasGoodVision);
+console.log(!hasDriversLicence);
+
+const shouldDrive = hasDriversLicence && hasGoodVision;
+
+// if (shouldDrive) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = true;
+console.log(hasDriversLicence || hasGoodVision || isTired); // true
+console.log((hasDriversLicence && hasGoodVision) || isTired); // true
+console.log(hasDriversLicence && hasGoodVision && isTired); // false
+
+// Sarah able to drive is has licence, has good vision and not tired
+if (hasDriversLicence && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
