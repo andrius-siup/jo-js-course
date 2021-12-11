@@ -232,12 +232,20 @@ const favourite = Number(prompt("what is your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);
 
-if (favourite == 23) {
-  console.log("Cool! 23 is an amazing number!");
-}
+// if (favourite == 23) {
+//   console.log("Cool! 23 is an amazing number!");
+// }
+
+// if (favourite === 23) {
+//   console.log("Cool! 23 is an amazing number!");
+// } else {
+//   console.log("It is same number but diff type!");
+// }
 
 if (favourite === 23) {
   console.log("Cool! 23 is an amazing number!");
+} else if (favourite === 7) {
+  console.log("7 is also cool number!");
 } else {
-  console.log("It is same number but diff type!");
+  console.log("The number is not 7 or 23!");
 }
