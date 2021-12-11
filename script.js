@@ -260,6 +260,7 @@ if (favourite !== 23) {
 }
 */
 
+/*
 // Logical Operators
 const hasDriversLicence = true;
 const hasGoodVision = false;
@@ -287,3 +288,4 @@ if (hasDriversLicence && hasGoodVision && !isTired) {
 } else {
   console.log("Someone else should drive...");
 }
+*/
