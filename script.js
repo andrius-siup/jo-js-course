@@ -228,7 +228,7 @@ if (age === 18) console.log("You just became an adult (strict)"); // type and va
 
 if (age == 18) console.log("You just became an adult (loose)"); // value
 
-const favourite = prompt("what is your favourite number?");
+const favourite = Number(prompt("what is your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);
 
