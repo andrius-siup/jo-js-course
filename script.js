@@ -165,3 +165,29 @@ if (birtYear <= 2000) {
 
 console.log(century);
 */
+
+// Type conversion and Coercion
+// type conversion
+const inputYear = "1991";
+// converted string in a number
+console.log(Number(inputYear), inputYear);
+
+console.log(inputYear);
+console.log(Number(inputYear) + 18); // 2009
+console.log(Number("Amdrius")); // NaN  - not a number
+console.log(typeof NaN); // number
+
+console.log(String(23), 23); //23 23
+
+// type coercion - js automaticly convert from num to str and vica versa
+console.log("I am " + 23 + " years old.");
+console.log("23" - "10" - "3"); // 10
+console.log("23" + "10" + "3"); // 23103
+console.log(23 + 10 + "3"); // 333
+console.log("10" - "4" - "3" - 2 + "5"); // 15
+console.log("23" * "2"); // 46
+console.log("23" / "2"); // 11.5
+
+let n = "1" + 1; // concatenate = 11
+n = n - 1; // n = 11 - 1 = 10 - minus operator convert to number
+console.log(n); // 10
