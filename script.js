@@ -194,6 +194,7 @@ n = n - 1; // n = 11 - 1 = 10 - minus operator convert to number
 console.log(n); // 10
 */
 
+/*
 // Truthy and Falsy Values
 // 5 falsy values: 0, '', undefined, null, NaN
 console.log(Boolean(0)); // false
@@ -218,3 +219,11 @@ if (height) {
 } else {
   console.log("Height is UNDEFINED");
 }
+*/
+
+// Equality Operators: == vs ===
+//const age = 18;
+const age = "18";
+if (age === 18) console.log("You just became an adult (strict)"); // type and value
+
+if (age == 18) console.log("You just became an adult (loose)"); // value
