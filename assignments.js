@@ -302,7 +302,7 @@ console.log(averageDolphin, averageKoalas);
 
 if (averageDolphin > averageKoalas) {
   console.log("Dolphin Win!");
-} else if (averageKoalas < averageKoalas) {
+} else if (averageKoalas > averageDolphin) {
   console.log("Koalas Win!");
 } else {
   console.log("It is Draw!");
