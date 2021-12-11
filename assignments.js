@@ -62,6 +62,23 @@ description = `Portugal is in Europe, and its 11 million people speak portuguese
 console.log(description);
 */
 
+whichAssignment = "Asseignment  - if / else Statement";
+console.log(whichAssignment);
+
+let populationLT = 2.795;
+// let populationLT = 13;
+// let populationLT = 130;
+let message;
+
+if (populationLT > 33) {
+  message = "Lithuania's population is above average";
+} else {
+  message = `Lituania's population is ${
+    33 - populationLT
+  } million below average'`;
+}
+console.log(message);
+
 /**
   JavaScript Fundamentals – Part 1 
  
