@@ -242,10 +242,18 @@ console.log(typeof favourite);
 //   console.log("It is same number but diff type!");
 // }
 
+// Checked the numbers 23 and 7
 if (favourite === 23) {
   console.log("Cool! 23 is an amazing number!");
 } else if (favourite === 7) {
   console.log("7 is also cool number!");
 } else {
   console.log("The number is not 7 or 23!");
+}
+
+// Checked the number 23
+if (favourite !== 23) {
+  console.log("Why not 23?");
+} else {
+  console.log("Amazing! The number is 23!");
 }
