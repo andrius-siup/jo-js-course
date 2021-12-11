@@ -166,6 +166,7 @@ if (birtYear <= 2000) {
 console.log(century);
 */
 
+/*
 // Type conversion and Coercion
 // type conversion
 const inputYear = "1991";
@@ -191,3 +192,29 @@ console.log("23" / "2"); // 11.5
 let n = "1" + 1; // concatenate = 11
 n = n - 1; // n = 11 - 1 = 10 - minus operator convert to number
 console.log(n); // 10
+*/
+
+// Truthy and Falsy Values
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0)); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean("Andrius")); // string  true
+console.log(Boolean({})); // empty object true
+console.log(Boolean("")); // empty string false
+
+//const money = 0;  // false
+const money = 100; // true
+if (money) {
+  console.log("Don't spend it all.");
+} else {
+  console.log("You should get a job!");
+}
+
+let height = 0; // false cause boolen of zero is false
+//let height = 123;  // true
+//let height; // cause don't have a value - is undefined - and by boolean is false
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
