@@ -284,6 +284,7 @@ Test data:
 
 */
 
+/*
 const dolphinsScoreFirst = 96;
 const dolphinsScoreSecond = 108;
 const dolphinsScoreThird = 89;
@@ -303,6 +304,42 @@ console.log(averageDolphin, averageKoalas);
 if (averageDolphin > averageKoalas) {
   console.log("Dolphin Win!");
 } else if (averageKoalas > averageDolphin) {
+  console.log("Koalas Win!");
+} else {
+  console.log("It is Draw!");
+}
+*/
+
+// Bonus -1
+/*
+Bonus 1: Include a requirement for a minimum score of 100. With this rule, a 
+team only wins if it has a higher score than the other team, and the same time a 
+score of at least 100 points. Hint: Use a logical operator to test for minimum 
+score, as well as multiple else-if blocks
+
+Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123 
+*/
+
+const dolphinsScoreFirst = 97;
+const dolphinsScoreSecond = 112;
+const dolphinsScoreThird = 101;
+
+const koalasScoreFirst = 109;
+const koalasScoreSecond = 95;
+const koalasScoreThird = 123;
+
+const averageDolphin =
+  (dolphinsScoreFirst + dolphinsScoreSecond + dolphinsScoreThird) / 3;
+
+const averageKoalas =
+  (koalasScoreFirst + koalasScoreSecond + koalasScoreThird) / 3;
+
+console.log(averageDolphin, averageKoalas);
+
+// Win the teanm with higher score average and min 100 points
+if (averageDolphin > averageKoalas && averageDolphin >= 100) {
+  console.log("Dolphin Win!");
+} else if (averageKoalas > averageDolphin && averageKoalas >= 100) {
   console.log("Koalas Win!");
 } else {
   console.log("It is Draw!");
