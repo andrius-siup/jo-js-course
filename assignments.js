@@ -270,18 +270,9 @@ Your tasks:
 2. Compare the team's average scores to determine the winner of the competition, 
 and print it to the console. Don't forget that there can be a draw, so test for that 
 as well (draw means they have the same average score) 
-3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a 
-team only wins if it has a higher score than the other team, and the same time a 
-score of at least 100 points. Hint: Use a logical operator to test for minimum 
-score, as well as multiple else-if blocks 😉 
-4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when 
-both teams have the same score and both have a score greater or equal 100 
-points. Otherwise, no team wins the trophy 
+ 
 Test data: 
 § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110 
-§ Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123 
-§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
-
 */
 
 /*
@@ -312,14 +303,15 @@ if (averageDolphin > averageKoalas) {
 
 // Bonus -1
 /*
-Bonus 1: Include a requirement for a minimum score of 100. With this rule, a 
+3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a 
 team only wins if it has a higher score than the other team, and the same time a 
 score of at least 100 points. Hint: Use a logical operator to test for minimum 
-score, as well as multiple else-if blocks
+score, as well as multiple else-if blocks 😉
 
 Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123 
 */
 
+/*
 const dolphinsScoreFirst = 97;
 const dolphinsScoreSecond = 112;
 const dolphinsScoreThird = 101;
@@ -343,4 +335,44 @@ if (averageDolphin > averageKoalas && averageDolphin >= 100) {
   console.log("Koalas Win!");
 } else {
   console.log("It is Draw!");
+}
+*/
+
+/*
+4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when 
+both teams have the same score and both have a score greater or equal 100 
+points. Otherwise, no team wins the trophy 
+ 
+§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+*/
+
+const dolphinsScoreFirst = 97;
+const dolphinsScoreSecond = 112;
+const dolphinsScoreThird = 101;
+
+const koalasScoreFirst = 109;
+const koalasScoreSecond = 95;
+const koalasScoreThird = 106;
+const minScore = 100;
+
+const averageDolphin =
+  (dolphinsScoreFirst + dolphinsScoreSecond + dolphinsScoreThird) / 3;
+
+const averageKoalas =
+  (koalasScoreFirst + koalasScoreSecond + koalasScoreThird) / 3;
+
+console.log(averageDolphin, averageKoalas);
+
+// Win the teanm with higher score average and min 100 points
+if (averageDolphin > averageKoalas && averageDolphin >= 100) {
+  console.log("Dolphin Win!");
+} else if (averageKoalas > averageDolphin && averageKoalas >= 100) {
+  console.log("Koalas Win!");
+} else if (
+  averageDolphin === averageKoalas &&
+  (averageDolphin + averageKoalas) / 2 >= minScore
+) {
+  console.log("It is Draw!");
+} else {
+  console.log("Check the score. Something goes wrong.");
 }
