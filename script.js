@@ -227,3 +227,17 @@ const age = "18";
 if (age === 18) console.log("You just became an adult (strict)"); // type and value
 
 if (age == 18) console.log("You just became an adult (loose)"); // value
+
+const favourite = prompt("what is your favourite number?");
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite == 23) {
+  console.log("Cool! 23 is an amazing number!");
+}
+
+if (favourite === 23) {
+  console.log("Cool! 23 is an amazing number!");
+} else {
+  console.log("It is same number but diff type!");
+}
