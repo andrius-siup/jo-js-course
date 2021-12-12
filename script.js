@@ -291,7 +291,7 @@ if (hasDriversLicence && hasGoodVision && !isTired) {
 */
 
 // ------------------  Switch statement
-const day = "wednesday";
+const day = "friday";
 // if you missed break; than will be print till the next break;
 switch (day) {
   case "monday":
@@ -316,4 +316,21 @@ switch (day) {
     break;
   default:
     console.log("Not a valid day");
+}
+
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Plan for Tuesday");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Plan for Friday");
+} else if (day === "saturday") {
+  console.log("Plan for Saturday");
+} else if (day === "sunday") {
+  console.log("Plan for Sunday");
+} else {
+  console.log("Not a valid day");
 }
