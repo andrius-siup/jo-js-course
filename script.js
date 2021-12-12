@@ -337,6 +337,7 @@ if (day === "monday") {
 }
 */
 
+/*
 // The Conditional (Ternary) operator
 
 const age = 23;
@@ -359,3 +360,4 @@ console.log(typeof drink2);
 
 // Ternary operator has value and is expression
 console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "milk 🧂"}`);
+*/
