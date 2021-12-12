@@ -334,7 +334,7 @@ if (averageDolphin > averageKoalas && averageDolphin >= 100) {
 } else if (averageKoalas > averageDolphin && averageKoalas >= 100) {
   console.log("Koalas Win!");
 } else {
-  console.log("It is Draw!");
+  console.log("Both wins the trophy!");
 }
 */
 
@@ -370,9 +370,10 @@ if (averageDolphin > averageKoalas && averageDolphin >= 100) {
   console.log("Koalas Win!");
 } else if (
   averageDolphin === averageKoalas &&
-  (averageDolphin + averageKoalas) / 2 >= minScore
+  averageDolphin >= 100 &&
+  averageKoalas >= 100
 ) {
   console.log("It is Draw!");
 } else {
-  console.log("Check the score. Something goes wrong.");
+  console.log("No one win the trophy!");
 }
