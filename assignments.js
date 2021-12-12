@@ -191,6 +191,7 @@ arabic: '5th most spoken language'
 for all other simply log 'Great language too :D'
 */
 
+/*
 whichAssignment = "Assignment  - switch statement";
 console.log(whichAssignment);
 
@@ -216,6 +217,7 @@ switch (language) {
   default:
     console.log("Great language too :D");
 }
+*/
 
 // -------------------- CHALLENGES -----------------------------------
 
