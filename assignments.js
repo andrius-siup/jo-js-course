@@ -468,6 +468,7 @@ Test data:
 
 */
 
+/*
 const bill = 275;
 const tipRate15 = 0.15; // 15%
 const tipRate20 = 0.2; // 20%
@@ -485,3 +486,4 @@ console.log(
 // console.log(
 //   `Tips for waitress is ${tip}, if your bill is ${bill}, so the total is ${total}`
 // );
+*/
