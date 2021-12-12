@@ -147,8 +147,39 @@ if (numNeighbours === 1) {
 // } else {
 //   console.log("No borders");
 // }
-
 */
+
+// Assignment  - Type Conversion and Coercion
+whichAssignment = "Assignment  - Logical Operators";
+console.log(whichAssignment);
+// Lithuania details
+const country = "Lithuania";
+const language = "Lithuanian";
+const population = 2.97;
+const isIsland = false;
+
+// Canada
+// const country = "Canada";
+// const language = "English";
+// const population = 38.2;
+// const isIsland = false;
+
+// Sarah requirements
+const languageENG = "English";
+const isIslandSarah = false;
+const populationSarah = 50;
+
+if (
+  population < populationSarah &&
+  languageENG === language &&
+  isIslandSarah === isIsland
+) {
+  console.log(`You should live in ${country}`);
+} else {
+  console.log(`${country} does not meet your criteria :(`);
+}
+
+// -------------------- CHALLENGES -----------------------------------
 
 /**
   JavaScript Fundamentals – Part 1 
@@ -345,7 +376,7 @@ points. Otherwise, no team wins the trophy
  
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
-
+/*
 const dolphinsScoreFirst = 97;
 const dolphinsScoreSecond = 112;
 const dolphinsScoreThird = 101;
@@ -377,3 +408,4 @@ if (averageDolphin > averageKoalas && averageDolphin >= 100) {
 } else {
   console.log("No one win the trophy!");
 }
+*/
