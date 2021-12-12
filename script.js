@@ -290,6 +290,7 @@ if (hasDriversLicence && hasGoodVision && !isTired) {
 }
 */
 
+/*
 // ------------------  Switch statement
 const day = "friday";
 // if you missed break; than will be print till the next break;
@@ -334,3 +335,4 @@ if (day === "monday") {
 } else {
   console.log("Not a valid day");
 }
+*/
