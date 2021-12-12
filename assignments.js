@@ -149,6 +149,7 @@ if (numNeighbours === 1) {
 // }
 */
 
+/*
 // Assignment  - Type Conversion and Coercion
 whichAssignment = "Assignment  - Logical Operators";
 console.log(whichAssignment);
@@ -178,6 +179,7 @@ if (
 } else {
   console.log(`${country} does not meet your criteria :(`);
 }
+*/
 
 // -------------------- CHALLENGES -----------------------------------
 
