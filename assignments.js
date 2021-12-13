@@ -554,6 +554,19 @@ const china2 = percentageOfWorld2(1441);
 const india2 = percentageOfWorld2(1380);
 const us2 = percentageOfWorld2(331);
 
+console.log("Function expression ⬇");
 console.log(china2);
 console.log(india2);
 console.log(us2);
+
+// Arrow Function
+const percentageOfWorld3 = (population) => `${(population / 7900) * 100}`;
+
+const china3 = percentageOfWorld3(1441);
+const india3 = percentageOfWorld3(1380);
+const us3 = percentageOfWorld3(331);
+
+console.log("Arrow function ⬇");
+console.log(china3);
+console.log(india3);
+console.log(us3);
