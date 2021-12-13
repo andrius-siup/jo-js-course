@@ -66,3 +66,11 @@ const calcAge2 = function (birthYear) {
 const calcAge3 = (birthYear) => 2021 - birthYear;
 const age3 = calcAge3(1985);
 console.log(age3);
+
+// calculate how many years left until retirement
+const yearsUntilRetirement = (birthYear) => {
+  const age = 2021 - birthYear;
+  const retirement = 65 - age;
+  return retirement;
+};
+console.log(yearsUntilRetirement(1985));
