@@ -97,8 +97,10 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 */
 
-const yearsUntilRetirement = (birthYear, firstName) => {
+const yearsUntilRetirement = function (birthYear, firstName) {
   const age = 2021 - birthYear;
   const retirement = 65 - age;
   return `${firstName} retires in ${retirement} years.`;
 };
+
+console.log(yearsUntilRetirement(1985, "Andrius"));
