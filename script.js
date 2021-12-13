@@ -36,6 +36,7 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 */
 
+/*
 // ------------------------------ Function Declarations vs. Expressions
 // Function declaration
 function calcAge1(birthYear) {
@@ -53,3 +54,15 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(1985);
 console.log(age1, age2);
+*/
+
+// ------------------------------ Arrow Function
+// Function expression
+const calcAge2 = function (birthYear) {
+  return 2021 - birthYear;
+};
+
+// Arrow function
+const calcAge3 = (birthYear) => 2021 - birthYear;
+const age3 = calcAge3(1985);
+console.log(age3);
