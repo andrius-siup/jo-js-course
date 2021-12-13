@@ -13,6 +13,7 @@ if (hasDriversLicense) console.log("I can drive!");
 // const if = false;
 */
 
+/*
 // -------------------------- Functions
 function logger() {
   console.log("My name is Andrius");
@@ -33,3 +34,4 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
+*/

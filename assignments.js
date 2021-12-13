@@ -487,3 +487,30 @@ console.log(
 //   `Tips for waitress is ${tip}, if your bill is ${bill}, so the total is ${total}`
 // );
 */
+
+// -------------------Fundamentals - Part -2
+/*
+1. Write a function called 'describeCountry' which takes three parameters: 
+'country', 'population' and 'capitalCity'. Based on this input, the 
+function returns a string with this format: 'Finland has 6 million people and its 
+capital city is Helsinki' 
+2. Call this function 3 times, with input data for 3 different countries. Store the 
+returned values in 3 different variables, and log them to the console
+*/
+function describeCountry(country, population, capitalCity) {
+  const countryDetails = `${country} has ${population} million people and its 
+  capital city is ${capitalCity}`;
+  return countryDetails;
+}
+
+const finland = describeCountry("Finland", 6, "Helsinki");
+console.log(finland);
+
+const lithuania = describeCountry("Lithuania", 2.97, "Vilnius");
+console.log(lithuania);
+
+const lv = describeCountry("Latvia", 2.5, "Riga");
+console.log(lv);
+
+const pl = describeCountry("Poland", 40, "Warsava");
+console.log(pl);
