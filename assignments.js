@@ -534,6 +534,7 @@ store the results into variables, and log them to the console
 the same populations) 
 */
 
+/*
 function percentageOfWorld1(population) {
   return `${(population / 7900) * 100}`;
 }
@@ -570,3 +571,4 @@ console.log("Arrow function ⬇");
 console.log(china3);
 console.log(india3);
 console.log(us3);
+*/
