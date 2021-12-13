@@ -68,9 +68,9 @@ const age3 = calcAge3(1985);
 console.log(age3);
 
 // calculate how many years left until retirement
-const yearsUntilRetirement = (birthYear) => {
+const yearsUntilRetirement = (birthYear, firstName) => {
   const age = 2021 - birthYear;
   const retirement = 65 - age;
-  return retirement;
+  return `${firstName} retires in ${retirement} years.`;
 };
-console.log(yearsUntilRetirement(1985));
+console.log(yearsUntilRetirement(1985, "Andrius"));
