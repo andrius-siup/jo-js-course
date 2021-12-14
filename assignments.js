@@ -601,7 +601,7 @@ Hints:
 § To check if number A is at least double number B, check for A >= 2 * B. 
 Apply this to the team's average scores 😉
 */
-
+/*
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 //console.log(calcAverage(3, 5, 6));
 
@@ -629,3 +629,4 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
+*/

@@ -124,3 +124,56 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1985, "Andrius"));
 console.log(yearsUntilRetirement(1955, "Mike"));
 */
+
+// ------------------------------ Introduction to Arrays
+const friend1 = "Michael";
+const friend2 = "Tadas";
+const friend3 = "Jonas";
+
+// Array
+const friends = ["Michael", "Tadas", "Jonas"];
+
+console.log(friends); // print array
+console.log(friends.length); // 3
+
+console.log(friends[friends.length - 1]); // print last index - Jonas
+
+console.log(friends[2]); // print 3rd index - Jonas
+
+friends[2] = "Jay";
+console.log(friends);
+
+// print all friends
+for (let i = 0; i < friends.length; i++) {
+  console.log(friends[i]);
+}
+
+// const years = new Array(1985, 1990, 1995, 2000);
+// console.log(years[0]);
+
+const firstName = "Andrius";
+const andrius = [firstName, "Siupinys", 2021 - 1985, "coder", friends];
+console.log(andrius);
+console.log(andrius.length);
+
+// Exercise
+const calcAge = function (birthYear) {
+  return 2021 - birthYear;
+};
+const years = [1990, 1967, 2002, 2010, 2018];
+
+console.log("Exercise");
+//console.log(calcAge(years)); // NaN
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+// put functions into array
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);
