@@ -182,6 +182,36 @@ console.log(ages);
 
 // ------------------------------ Array methods
 const friends = ["Michael", "Tadas", "Jonas"];
-friends.push("Kazys");
+// add elements
+const newLenght = friends.push("Kazys");
 
 console.log(friends);
+console.log(newLenght);
+
+// unshift() method is used to add one or more elements to the beginning of the given array
+friends.unshift("John");
+console.log(friends);
+
+// Remove elements
+friends.pop(); // removed last element
+const popped = friends.pop(); // removed last element and store in variable
+
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // Removed first element
+console.log(friends);
+
+console.log(friends.indexOf("Tadas")); // return value 1
+console.log(friends.indexOf("Bobas")); // return value -1, cause is not in array
+
+console.log(friends.includes("Tadas")); // return value true
+console.log(friends.includes("Bobas")); // return false, cause isn't in array
+
+friends.push(23);
+console.log(friends.includes("23")); // return false, cause we use strict mode
+console.log(friends.includes(23)); // return value true
+
+if (friends.includes("Tadas")) {
+  console.log("You have a friend called Tadas");
+}
