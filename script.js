@@ -180,6 +180,7 @@ const ages = [
 console.log(ages);
 */
 
+/*
 // ------------------------------ Array methods
 const friends = ["Michael", "Tadas", "Jonas"];
 // add elements
@@ -215,3 +216,4 @@ console.log(friends.includes(23)); // return value true
 if (friends.includes("Tadas")) {
   console.log("You have a friend called Tadas");
 }
+*/
