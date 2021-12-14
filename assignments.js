@@ -573,6 +573,26 @@ console.log(india3);
 console.log(us3);
 */
 
+// --------------------------- Introduction into Arrays
+const populations = [1441, 1380, 331, 150];
+console.log(populations.length === 4); // true
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+// print into array
+const populationPercentage = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[populations.length - 1]),
+];
+console.log(populationPercentage);
+// print as Number
+for (let i = 0; i < populationPercentage.length; i++) {
+  console.log(populationPercentage[i]);
+  //console.log(typeof populationPercentage[i]);
+}
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 
  
