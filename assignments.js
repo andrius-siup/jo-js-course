@@ -675,6 +675,7 @@ actually be the returned value of a function! So you can just call a function as
 values (so don't store the tip values in separate variables first, but right in the new 
 array) 😉
 */
+
 let tip;
 const bills = [275, 40, 430];
 
@@ -692,6 +693,15 @@ function calcTip(bill) {
     return tip;
   }
 }
+
+// Arrow function
+// const calcTip = (bill) =>
+//   bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// Expression function
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
 
 //console.log(calcTip(100));
 console.log(bills);
