@@ -217,3 +217,70 @@ if (friends.includes("Tadas")) {
   console.log("You have a friend called Tadas");
 }
 */
+
+// -------------------------- Introduction Objects
+// array
+const andreArray = [
+  "Andrius",
+  "Siupinys",
+  2021 - 1985,
+  "coder",
+  ["Tadas", "Jonas", "Kazys"],
+];
+// object
+const andre = {
+  firstName: "Andrius",
+  lastName: "Siupinys",
+  age: 2021 - 1985,
+  job: "coder",
+  friends: ["Tadas", "Jonas", "Kazys"],
+};
+console.log(andre);
+
+// dot notation
+console.log(andre.lastName);
+
+// brackects notation we can put expressions
+console.log(andre["lastName"]);
+
+const nameKey = "Name";
+console.log(andre["first" + nameKey]); // firstName - Andrius
+console.log(andre["last" + nameKey]); // lastName - Siupinys
+
+console.log(andre["friends"]);
+// example
+
+const intrestedIn = prompt(
+  "What do you want about Andrius? Choose between firstNAme, lastName, age, job, and friends"
+);
+
+// console.log(andre[intrestedIn]);
+
+// created if /else cause can be input wrong word
+if (andre[intrestedIn]) {
+  console.log(andre[intrestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between firstNAme, lastName, age, job, and friends"
+  );
+}
+
+// add data to object
+andre.location = "Ireland";
+andre["twitter"] = "@andriusiup";
+console.log(andre);
+
+// Challenge
+// 'Andrius has 3 friends, and his best friend is called Tadas(first element in object)'
+console.log(
+  andre.firstName +
+    " has " +
+    andre.friends.length +
+    " friends, and his best friend called " +
+    andre.friends[0] +
+    "."
+);
+
+console.log(
+  `${andre.firstName} has ${andre.friends.length} friends, and his best friend called ${andre.friends[0]}.`
+);

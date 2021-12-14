@@ -676,6 +676,7 @@ values (so don't store the tip values in separate variables first, but right in 
 array) 😉
 */
 
+/*
 let tip;
 const bills = [275, 40, 430];
 
@@ -719,3 +720,4 @@ console.log(tips);
 // calculate totals
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
+*/
