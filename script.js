@@ -179,3 +179,9 @@ const ages = [
 ];
 console.log(ages);
 */
+
+// ------------------------------ Array methods
+const friends = ["Michael", "Tadas", "Jonas"];
+friends.push("Kazys");
+
+console.log(friends);
