@@ -311,6 +311,12 @@ const andre = {
     console.log(this);
     return this.age;
   },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} - year old ${
+      this.job
+    } , and he has ${this.hasDriverLicense ? "a" : "no"} a driver's license.`;
+  },
 };
 
 console.log(andre.calcAge()); // dot notation
@@ -326,5 +332,7 @@ console.log(andre.age);
 console.log(
   `${andre.firstName} is a ${andre.calcAge()} - year old ${
     andre.job
-  } , and he ${andre.hasDriverLicense ? "has" : "no"} a driver's license.`
+  } , and he has ${andre.hasDriverLicense ? "a" : "no"} a driver's license.`
 );
+
+console.log(andre.getSummary());
