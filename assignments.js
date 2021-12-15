@@ -622,6 +622,7 @@ neighbours[neighbours.indexOf("Slovakia")] = "Republic of Slovakia";
 console.log(neighbours);
 */
 
+/*
 // --------------------------------------------------Introduction to Objects
 const myCountry = {
   country: "Lithuania",
@@ -632,6 +633,30 @@ const myCountry = {
 };
 
 console.log(myCountry);
+*/
+
+// ----------------------------------------------- Dot vs. Bracket Notation
+const myCountry = {
+  country: "Lithuania",
+  capital: "Vilnius",
+  language: "Lituanian",
+  population: 2.87,
+  neighbours: ["Latvia", "Russia", "Belarus", "Poland"],
+};
+
+console.log(myCountry);
+console.log(
+  `${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+);
+
+// add 2 mln using DOT notation
+myCountry.population += 2;
+console.log(myCountry.population);
+
+// add 2 mln using BRACKET notation
+myCountry["population"] -= 2;
+console.log(myCountry["population"]);
+
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 
  
