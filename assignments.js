@@ -834,6 +834,7 @@ Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 tall
 */
 
+/*
 const mark = {
   firstName: "Mark",
   lastName: "Miller",
@@ -872,3 +873,4 @@ if (mark.bmi > john.bmi) {
     `${john.firstName} BMI (${john.bmi}) is higher than ${mark.firstName} (${mark.bmi})`
   );
 }
+*/
