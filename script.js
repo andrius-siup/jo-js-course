@@ -218,6 +218,7 @@ if (friends.includes("Tadas")) {
 }
 */
 
+/*
 // -------------------------- Introduction Objects
 // array
 const andreArray = [
@@ -284,3 +285,21 @@ console.log(
 console.log(
   `${andre.firstName} has ${andre.friends.length} friends, and his best friend called ${andre.friends[0]}.`
 );
+*/
+
+// ------------------------------------- Object methods
+const andre = {
+  firstName: "Andrius",
+  lastName: "Siupinys",
+  birthYear: 1985,
+  job: "coder",
+  friends: ["Tadas", "Jonas", "Kazys"],
+  hasDriverLicense: true,
+
+  calcAge: function (birthYear) {
+    return 2037 - birthYear;
+  },
+};
+
+console.log(andre.calcAge(1985)); // dot notation
+console.log(andre["calcAge"](1985)); // bracket notation
