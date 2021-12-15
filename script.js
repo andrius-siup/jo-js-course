@@ -287,6 +287,7 @@ console.log(
 );
 */
 
+/*
 // ------------------------------------- Object methods
 const andre = {
   firstName: "Andrius",
@@ -300,12 +301,12 @@ const andre = {
   //   return 2037 - birthYear;
   // },
 
-  /*
-  calcAge: function () {
-    //console.log(this); // with 'this' can use all object
-    return 2037 - this.birthYear;
-  },
-  */
+  
+  // calcAge: function () {
+  //   //console.log(this); // with 'this' can use all object
+  //   return 2037 - this.birthYear;
+  // },
+  
   calcAge: function () {
     this.age = 2037 - this.birthYear; // create variable age with value
     console.log(this);
@@ -336,3 +337,4 @@ console.log(
 );
 
 console.log(andre.getSummary());
+*/

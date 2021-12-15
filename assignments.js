@@ -596,6 +596,30 @@ for (let i = 0; i < populationPercentage.length; i++) {
 }
 */
 
+// -------------------- Basic Array Operations (Methods)
+const neighbours = [
+  "Austria",
+  "Slovakia",
+  "Ukraine",
+  "Romania",
+  "Serbia",
+  "Croatia",
+  "Slovenia",
+];
+
+neighbours.push("Utopia"); // add at the end of array
+neighbours.pop(); // removed last el from the array
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+  console.log("Probably not a central European country :D");
+} else {
+  console.log("Probably a central European country :D");
+}
+
+// find country and replace name of this country
+neighbours[neighbours.indexOf("Slovakia")] = "Republic of Slovakia";
+console.log(neighbours);
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 
  
