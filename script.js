@@ -338,7 +338,7 @@ console.log(
 
 console.log(andre.getSummary());
 */
-
+/*
 // ------------------------------------------ Iteration: the for loop
 // console.log("Lifting weights repetition 1 🏋️‍♀️");
 // console.log("Lifting weights repetition 2 🏋️‍♀️");
@@ -358,3 +358,4 @@ console.log(andre.getSummary());
 for (let rep = 0; rep < 10; rep++) {
   console.log(`Lifting weights repetition ${rep + 1} 🏋️‍♀️`);
 }
+*/
