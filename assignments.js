@@ -669,6 +669,13 @@ const myCountry = {
   describe: function () {
     return `${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`;
   },
+  checkIsIsland: function () {
+    return `${
+      this.neighbours.length === 0
+        ? (this.isIsland = true)
+        : (this.isIsland = false)
+    }`;
+  },
 };
 
 console.log(myCountry);
@@ -676,14 +683,10 @@ console.log(myCountry.describe());
 // console.log(
 //   `${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
 // );
-
-// add 2 mln using DOT notation
-myCountry.population += 2;
-console.log(myCountry.population);
-
-// add 2 mln using BRACKET notation
-myCountry["population"] -= 2;
-console.log(myCountry["population"]);
+console.log(myCountry.checkIsIsland());
+console.log(
+  `Does ${myCountry.country} is a island ? ${myCountry.isIsland ? "yes" : "no"}`
+);
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 
  
