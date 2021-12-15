@@ -595,7 +595,7 @@ for (let i = 0; i < populationPercentage.length; i++) {
   //console.log(typeof populationPercentage[i]);
 }
 */
-
+/*
 // -------------------- Basic Array Operations (Methods)
 const neighbours = [
   "Austria",
@@ -620,6 +620,18 @@ if (!neighbours.includes("Germany")) {
 // find country and replace name of this country
 neighbours[neighbours.indexOf("Slovakia")] = "Republic of Slovakia";
 console.log(neighbours);
+*/
+
+// --------------------------------------------------Introduction to Objects
+const myCountry = {
+  country: "Lithuania",
+  capital: "Vilnius",
+  language: "Lituanian",
+  population: 2.87,
+  neighbours: ["Latvia", "Russia", "Belarus", "Poland"],
+};
+
+console.log(myCountry);
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 
  
