@@ -320,3 +320,11 @@ console.log(andre.age);
 console.log(andre.age);
 
 //console.log(andre["calcAge"](1985)); // bracket notation
+
+// Challenge
+// "Andrius is a 52-year old  coder, and he has a driver's license."
+console.log(
+  `${andre.firstName} is a ${andre.calcAge()} - year old ${
+    andre.job
+  } , and he ${andre.hasDriverLicense ? "has" : "no"} a driver's license.`
+);
