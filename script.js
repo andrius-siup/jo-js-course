@@ -300,12 +300,23 @@ const andre = {
   //   return 2037 - birthYear;
   // },
 
+  /*
   calcAge: function () {
-    console.log(this); // with 'this' can use all object
+    //console.log(this); // with 'this' can use all object
     return 2037 - this.birthYear;
+  },
+  */
+  calcAge: function () {
+    this.age = 2037 - this.birthYear; // create variable age with value
+    console.log(this);
+    return this.age;
   },
 };
 
 console.log(andre.calcAge()); // dot notation
+
+console.log(andre.age); // value of age will be printed
+console.log(andre.age);
+console.log(andre.age);
 
 //console.log(andre["calcAge"](1985)); // bracket notation
