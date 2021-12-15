@@ -296,10 +296,16 @@ const andre = {
   friends: ["Tadas", "Jonas", "Kazys"],
   hasDriverLicense: true,
 
-  calcAge: function (birthYear) {
-    return 2037 - birthYear;
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  calcAge: function () {
+    console.log(this); // with 'this' can use all object
+    return 2037 - this.birthYear;
   },
 };
 
-console.log(andre.calcAge(1985)); // dot notation
-console.log(andre["calcAge"](1985)); // bracket notation
+console.log(andre.calcAge()); // dot notation
+
+//console.log(andre["calcAge"](1985)); // bracket notation
