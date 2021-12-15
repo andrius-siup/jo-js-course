@@ -659,6 +659,7 @@ myCountry["population"] -= 2;
 console.log(myCountry["population"]);
 */
 
+/*
 // ------------------------------------------------------------ Object Methods
 const myCountry = {
   country: "Lithuania",
@@ -687,6 +688,8 @@ console.log(myCountry.checkIsIsland());
 console.log(
   `Does ${myCountry.country} is a island ? ${myCountry.isIsland ? "yes" : "no"}`
 );
+*/
+
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 
  
@@ -812,3 +815,60 @@ console.log(tips);
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
 */
+
+/*
+--------------------------------- Coding Challenge #3
+
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to 
+implement the calculations! Remember: BMI = mass / height ** 2 = mass 
+/ (height * height) (mass in kg and height in meter) 
+Your tasks: 
+1. For each of them, create an object with properties for their full name, mass, and 
+height (Mark Miller and John Smith) 
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same 
+method on both objects). Store the BMI value to a property, and also return it 
+from the method 
+3. Log to the console who has the higher BMI, together with the full name and the 
+respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!" 
+Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m 
+tall
+*/
+
+const mark = {
+  firstName: "Mark",
+  lastName: "Miller",
+  height: 1.69,
+  weight: 78,
+  calcBMI: function () {
+    this.bmi = `${this.weight / this.height ** 2}`;
+    return this.bmi;
+  },
+};
+
+const john = {
+  firstName: "John",
+  lastName: "Smith",
+  height: 1.95,
+  weight: 92,
+  calcBMI: function () {
+    // create variable and store into abject with value
+    this.bmi = `${this.weight / this.height ** 2}`;
+    return this.bmi;
+  },
+};
+
+mark.calcBMI();
+john.calcBMI();
+// console.log(`Mark BMI - ${mark.calcBMI()}, and John BMI - ${john.calcBMI()}`);
+// console.log(john.bmi);
+
+// Checked which has higher BMI
+if (mark.bmi > john.bmi) {
+  console.log(
+    `${mark.firstName} BMI (${mark.bmi}) is higher than ${john.firstName} (${john.bmi})`
+  );
+} else {
+  console.log(
+    `${john.firstName} BMI (${john.bmi}) is higher than ${mark.firstName} (${mark.bmi})`
+  );
+}
