@@ -456,6 +456,8 @@ while (reps <= 10) {
   reps++;
 }
 */
+
+/*
 // The Math.trunc() function returns the integer part of a number by removing any fractional digits.
 let dice = Math.trunc(Math.random() * 6) + 1;
 console.log(dice);
@@ -467,3 +469,4 @@ while (dice !== 6) {
 
   if (dice === 6) console.log("Loop is about to end...");
 }
+*/

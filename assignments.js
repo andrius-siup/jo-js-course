@@ -698,7 +698,7 @@ for (let rep = 1; rep <= 50; rep++) {
 */
 
 /*
-// Looping array, Breaking, Countinuing
+// ------------------------------ Looping array, Breaking, Countinuing
 const populations = [1441, 1380, 331, 150];
 
 // Calculate world population in %
@@ -716,6 +716,21 @@ for (let i = 0; i < populations.length; i++) {
 console.log(percentages2);
 */
 
+// -----------------------------------Looping Backwards and Loops in Loops
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+// Loged one by one countries
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  // console.log(listOfNeighbours[i]);
+
+  for (let x = 0; x < listOfNeighbours[i].length; x++) {
+    console.log(`Neighbour : ${listOfNeighbours[i][x]}`);
+  }
+}
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 
  
