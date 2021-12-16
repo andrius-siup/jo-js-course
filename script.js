@@ -409,6 +409,7 @@ for (let i = 0; i < andreArray.length; i++) {
 }
 */
 
+/*
 const andreArray = [
   "Andrius",
   "Siupinys",
@@ -432,4 +433,25 @@ for (let exercise = 1; exercise < 4; exercise++) {
   for (let rep = 1; rep < 6; rep++) {
     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
   }
+}
+*/
+
+// ------------------------------------------- while loop
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
+
+let rep = 1;
+//do / while loop
+do {
+  console.log(`DO/WHILW: Lifting weights repetition ${rep}`);
+  rep++;
+} while (rep <= 10);
+
+// while
+let reps = 1;
+while (reps <= 10) {
+  console.log(`WHILE: Lifting weights repetition ${reps}`);
+  reps++;
 }
