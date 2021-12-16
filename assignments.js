@@ -699,24 +699,20 @@ for (let rep = 1; rep <= 50; rep++) {
 
 // Looping array, Breaking, Countinuing
 const populations = [1441, 1380, 331, 150];
-console.log(populations.length === 4); // true
 
+// Calculate world population in %
 function percentageOfWorld1(population) {
   return (population / 7900) * 100;
 }
-// print into array
-const percentages2 = [
-  percentageOfWorld1(populations[0]),
-  percentageOfWorld1(populations[1]),
-  percentageOfWorld1(populations[2]),
-  percentageOfWorld1(populations[populations.length - 1]),
-];
-console.log(percentages2);
-// print as Number
-for (let i = 0; i < percentages2.length; i++) {
-  console.log(percentages2[i]);
-  //console.log(typeof percentages2[i]);
+// Empty array
+const percentages2 = [];
+
+// Looping and pushing into array
+for (let i = 0; i < populations.length; i++) {
+  const perc = percentageOfWorld1(populations[i]);
+  percentages2.push(perc);
 }
+console.log(percentages2);
 
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 
