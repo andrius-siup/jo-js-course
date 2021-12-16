@@ -697,6 +697,7 @@ for (let rep = 1; rep <= 50; rep++) {
 }
 */
 
+/*
 // Looping array, Breaking, Countinuing
 const populations = [1441, 1380, 331, 150];
 
@@ -713,6 +714,7 @@ for (let i = 0; i < populations.length; i++) {
   percentages2.push(perc);
 }
 console.log(percentages2);
+*/
 
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 

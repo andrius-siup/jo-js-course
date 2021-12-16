@@ -408,3 +408,19 @@ for (let i = 0; i < andreArray.length; i++) {
   console.log(andreArray[i], typeof andreArray[i]);
 }
 */
+
+const andreArray = [
+  "Andrius",
+  "Siupinys",
+  2021 - 1985,
+  "coder",
+  ["Tadas", "Jonas", "Kazys"],
+];
+
+// 0,1,2,3,4
+//4,3,2,1,0
+
+// i = 5-1=4; true till 0 ; minus one down each iteration, 4,3,2,1,0
+for (let i = andreArray.length - 1; i >= 0; i--) {
+  console.log(i, andreArray[i]);
+}
