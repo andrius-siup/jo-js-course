@@ -360,6 +360,7 @@ for (let rep = 0; rep < 10; rep++) {
 }
 */
 
+/*
 // Looping array, Breaking, Countinuing
 const andreArray = [
   "Andrius",
@@ -406,3 +407,4 @@ for (let i = 0; i < andreArray.length; i++) {
   // Reading from andreArray
   console.log(andreArray[i], typeof andreArray[i]);
 }
+*/
