@@ -1006,3 +1006,28 @@ for (let i = 0; i < totals.length; i++) {
     `The Bill of ${bills[i]} euro the tip is ${tips[i]} euro so the Total: ${totals[i]}`
   );
 }
+
+// Here is easiest way and everything store in array
+// for (let i = 0; i < bills.length; i++) {
+//   const tip = calcTip(bills[i]);
+//   tips.push(tip);
+//   totals.push(tip + bills[i]);
+// }
+
+// console.log(bills, tips, totals);
+
+console.log("Bonus - calculate average of totals");
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    // sum = sum + arr[i];
+    sum += arr[i];
+  }
+  // console.log(sum);
+  return sum / arr.length; // calculate average
+};
+
+// console.log(calcAverage([2, 3, 7]));  // example
+// console.log(calcAverage(bills));
+// console.log(calcAverage(tips));
+console.log(calcAverage(totals));
