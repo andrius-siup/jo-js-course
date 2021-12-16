@@ -690,10 +690,12 @@ console.log(
 );
 */
 
+/*
 // ------------------------------------------ Iteration: The for Loop
 for (let rep = 1; rep <= 50; rep++) {
   console.log(`Voter number ${rep} is currently voting.`);
 }
+*/
 
 /*
 // -------------------------  JavaScript Fundamentals – Part 2 

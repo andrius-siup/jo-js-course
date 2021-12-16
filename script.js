@@ -359,3 +359,50 @@ for (let rep = 0; rep < 10; rep++) {
   console.log(`Lifting weights repetition ${rep + 1} 🏋️‍♀️`);
 }
 */
+
+// Looping array, Breaking, Countinuing
+const andreArray = [
+  "Andrius",
+  "Siupinys",
+  2021 - 1985,
+  "coder",
+  ["Tadas", "Jonas", "Kazys"],
+  true,
+];
+const types = [];
+
+for (let i = 0; i < andreArray.length; i++) {
+  // Reading from andreArray
+  console.log(andreArray[i], typeof andreArray[i]);
+
+  // Filling types array
+  //types[i] = typeof andreArray[i];
+
+  types.push(typeof andreArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+let ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]); // push to the array
+}
+console.log(ages);
+
+// continue and break
+console.log("--- only strings ---");
+for (let i = 0; i < andreArray.length; i++) {
+  if (typeof andreArray[i] !== "string") continue;
+  // Reading from andreArray
+  console.log(andreArray[i], typeof andreArray[i]);
+}
+
+console.log("--- Break with number ---");
+for (let i = 0; i < andreArray.length; i++) {
+  // When number found, stopped the looping and printed everything before number
+  if (typeof andreArray[i] === "number") break;
+  // Reading from andreArray
+  console.log(andreArray[i], typeof andreArray[i]);
+}
