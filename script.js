@@ -470,7 +470,7 @@ while (dice !== 6) {
   if (dice === 6) console.log("Loop is about to end...");
 }
 */
-// Problem:
+// Problem 1:
 /*
 We work for a company building a smart home thermometer. Our most recent task is this: "Given an array of temperatures of one day, calculate the temp amplitude. Keep in mind that sometimes there might be a sensor error."
 */
@@ -505,3 +505,35 @@ const calcTempAmplitude = function (temps) {
 
 const amplitude = calcTempAmplitude(temperatures);
 console.log(amplitude);
+
+// Problem 2:
+// Function should now receive 2 arrays of temps
+
+// 1) Understanding the problem
+// - With 2 arrays, should we implement functionality twice? NO! Just merge two arrays
+
+// 2) Breaking up into sub-problems
+// - Merge two arrays?
+
+const calcTempAmplitudeNew = function (t1, t2) {
+  // concatinate two arrays
+  const temps = t1.concat(t2);
+  console.log(temps);
+
+  let max = temps[0];
+  let min = temps[0];
+
+  for (let i = 0; i < temps.length; i++) {
+    const currTemp = temps[i];
+    // fouded error
+    if (typeof currTemp !== "number") continue;
+
+    if (currTemp > max) max = currTemp;
+    if (currTemp < min) min = currTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
+console.log(amplitudeNew);
