@@ -477,5 +477,25 @@ We work for a company building a smart home thermometer. Our most recent task is
 const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 
 // 1) Understanding the problem
+// - What is temp amplitude? Answer: diff between highest and lowest temp
+// - How to compute max and min temps?
+// - What's sensor error? And what to do?
 
 // 2) Breaking up into sub-problems
+// - How to ignore errors?
+// - Find max value in temp array
+// - Find min value in temp array
+// - Subtract min from max (amplitude) and return it
+
+const calcTempAmplitude = function (temps) {
+  let max = temps[0];
+  let min = temps[0];
+  for (let i = 0; i < temperatures.length; i++) {
+    const currTemp = temps[i];
+    if (currTemp > max) max = currTemp;
+    if (currTemp < min) min = currTemp;
+  }
+  console.log(max, min);
+};
+
+calcTempAmplitude([3, 6, 9, 45]);
