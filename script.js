@@ -540,12 +540,14 @@ const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
 console.log(amplitudeNew);
 */
 
+// Debugging: console and breakpoints
 const measureKelvin = function () {
   const measurement = {
     type: "temp",
     unit: "celsius",
     // c) fix
-    value: Number(prompt("Degrees celsius")),
+    // value: Number(prompt("Degrees celsius")),
+    value: 10,
   };
 
   // b) find a bug
@@ -559,3 +561,30 @@ const measureKelvin = function () {
 };
 // a) Identify bug
 console.log(measureKelvin());
+
+// Using a debugger
+const calcTempAmplitudeBug = function (t1, t2) {
+  // concatinate two arrays
+  const temps = t1.concat(t2);
+  console.log(temps);
+
+  // set to zero creat a bug in variable min
+  let max = 0;
+  let min = 0; // here is bug cous in array is min 1 not 0
+
+  for (let i = 0; i < temps.length; i++) {
+    const currTemp = temps[i];
+    // fouded error
+    if (typeof currTemp !== "number") continue;
+
+    // opening dubuger tab in dev tools
+    // debugger;
+    if (currTemp > max) max = currTemp;
+    if (currTemp < min) min = currTemp;
+  }
+  console.log(max, min);
+  return max - min;
+};
+
+const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
+console.log(amplitudeBug);
