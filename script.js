@@ -539,7 +539,7 @@ const calcTempAmplitudeNew = function (t1, t2) {
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
 console.log(amplitudeNew);
 */
-
+/*
 // Debugging: console and breakpoints
 const measureKelvin = function () {
   const measurement = {
@@ -561,7 +561,7 @@ const measureKelvin = function () {
 };
 // a) Identify bug
 console.log(measureKelvin());
-
+*/
 // Using a debugger
 const calcTempAmplitudeBug = function (t1, t2) {
   // concatinate two arrays
@@ -569,8 +569,11 @@ const calcTempAmplitudeBug = function (t1, t2) {
   console.log(temps);
 
   // set to zero creat a bug in variable min
-  let max = 0;
-  let min = 0; // here is bug cous in array is min 1 not 0
+  // let max = 0;
+  // let min = 0; // here is bug cous in array is min 1 not 0
+  // Here fix the bug
+  let max = temps[0];
+  let min = temps[0];
 
   for (let i = 0; i < temps.length; i++) {
     const currTemp = temps[i];
