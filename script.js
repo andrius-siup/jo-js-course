@@ -562,6 +562,8 @@ const measureKelvin = function () {
 // a) Identify bug
 console.log(measureKelvin());
 */
+
+/*
 // Using a debugger
 const calcTempAmplitudeBug = function (t1, t2) {
   // concatinate two arrays
@@ -591,3 +593,4 @@ const calcTempAmplitudeBug = function (t1, t2) {
 
 const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 console.log(amplitudeBug);
+*/
